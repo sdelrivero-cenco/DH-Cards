@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+body{
+    background-color: rgb(29, 27, 27);
+    font-family: 'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-color: white;
+    margin: 5vh auto;
+    width: 355px;
+    height: 755px;
+    /* border: 1px solid black; */
+    border-radius: 15px;
+
+}
+
+.container__title{
+    height: 290px;
+    color: white;
+    text-align: center;
+}
+.container__title p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+     text-align: center;
+    padding: 133px 71px; 
+
+
+}
+
+
+
+.container__text{
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30.26px;
+    padding: 30px 15px;
+}
+
+.container__subtext{
+    font-size: 20px;
+    padding: 0px 34px;
+}
+
+.bgr1{
+    background-image: url('/images/Bg.png');
+
+}
+
+.bgr2{
+    background-image: url('/images/Bg2.png');
+
+}
+
+.bgr3{
+    background-image: url('/images/Bg3.png');
+
+}
+
+@media screen and (min-width: 1920px) {
+    .container{
+        display: inline-block;
+        width: 430px;
+        height: 650px;
+    }
+    .container:not(:last-child){
+        margin-right: 50px;
+    }
+    .main{
+                margin: 110px 265px 320px 265px;
+
+    }
+
+    .container__title{
+        height: 290px;
+        background-size: cover;
+    }
+    .container__title p{
+        font-size: 25px;  /* el figma decia 44px, pero si le doy ese
+        valor, me queda demasiado grande. No me doy cuenta la razon.*/
+    }
+    
+}
